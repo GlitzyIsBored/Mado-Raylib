@@ -10,7 +10,9 @@ Button button;
 
 int main(void) {
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Omg Mado");
+    SetConfigFlags(FLAG_WINDOW_TRANSPARENT);
     SetWindowIcon(LoadImage("../images/icon/Mado-icon.png"));
+    SetWindowState(FLAG_WINDOW_UNDECORATED);
     InitAudioDevice();
 
     setButton();
@@ -20,7 +22,7 @@ int main(void) {
     while (!WindowShouldClose()) {
         BeginDrawing();
 
-            ClearBackground(RAYWHITE);
+            ClearBackground(BLANK);
             DrawText("Omgsss", 0, 0, 20, PINK);
             drawButton();
 
