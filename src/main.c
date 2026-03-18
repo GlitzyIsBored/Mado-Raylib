@@ -9,8 +9,8 @@
 Button button;
 
 int main(void) {
-    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Omg Mado");
     SetConfigFlags(FLAG_WINDOW_TRANSPARENT);
+    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Omg Mado");
     SetWindowIcon(LoadImage("../images/icon/Mado-icon.png"));
     //SetWindowState(FLAG_WINDOW_UNDECORATED);
     InitAudioDevice();
