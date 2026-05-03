@@ -15,7 +15,7 @@ void setButton(void) {
     button.btnAction = false;
     button.mousePos = (Vector2){ 0.0f, 0.0f };
     button.btnHeight = (float)button.madoDAME.height / 3;
-    button.btnBounds = (Rectangle){ 300 / 2.0f - button.madoDAME.width/2.0f, 300 / 2.0f - (float)button.madoDAME.height / 3 /2.0f, (float)button.madoDAME.width, button.btnHeight };
+    button.btnBounds = (Rectangle){ 150 / 2.0f - button.madoDAME.width/2.0f, 300 / 2.0f - (float)button.madoDAME.height / 3 /2.0f, (float)button.madoDAME.width, button.btnHeight };
 }
 
 void drawButton(void) {
